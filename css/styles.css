@@ -4,76 +4,37 @@ body {
     font-family: Roboto, sans-serif;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    padding: 0;
 
     display: flex;
     flex-direction: column;
 }
 
-.header {
-    background-color: #1F2937;
-
-    display: flex;
-    flex-direction: column;
-
-    padding-left: 200px;
-    padding-right: 200px;
+a {
+    text-decoration: none;
 }
 
-.heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.header-text {
-    font-size: 48px;
-    font-weight: bolder;
-    color: #F9FAF9;
-}
-
-.header-content {
-    display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-    justify-content: space-between;
-    
-}
-
-.header-left {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    width: 40%;
-    flex-basis: auto;
-}
-
-.header-right {
-    background-color: gray;
-    color: white;
-    padding: 110px 150px;
-
-}
-
-.header-paragraph {
-    font-size: 18px;
+.secondary-font {
     color: #E5E7EB;
-
-    padding: 10px 0;
+    font-size: 18px;
+    font-weight: lighter;
 }
 
-.signup-button {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    
-    padding: 10px 30px;
-    align-self: flex-start;
-    border-radius: 15px;
+/* Section 1 */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.section-1 {
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1 > * {
+    padding: 0 10rem; /* to push all elements to center */
 }
 
 .logo {
@@ -83,14 +44,53 @@ body {
 }
 
 .links {
-    font-size: 18px;
-    color: #E5E7EB;
-
-    gap: 10px;
-}
-
-.logo,.links {
-    align-self: stretch;
     display: flex;
-    align-items: center;
+    gap: 1rem;
 }
+
+.placeholder {
+    background-color: gray;
+    color: white;
+
+    flex: 1;
+    
+    /* alignment */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+}
+
+.header-content {
+    display: flex;
+    gap: 18rem;
+
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.description {
+    flex: 1;
+}
+
+.description > * {
+    padding: 0.25rem 0;
+}
+
+.awesome-text {
+    font-weight: bolder;
+    font-size: 48px;
+    color: #F9FAF8;
+}
+
+.signup-button-solid {
+    background-color: #3882F6;
+    flex: auto;
+    color: #F9FAF8;
+    font-weight: bold;
+    
+    border-style: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+}
+
+/* ~Section 1~ */
